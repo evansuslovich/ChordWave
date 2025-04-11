@@ -3,3 +3,42 @@ transformers/
 *.csv
 .DS_Store
 data/
+
+
+# dependencies
+/node_modules
+
+# build
+/dist
+/build
+
+# testing
+/coverage
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Parcel or Vite cache
+.cache/
+.vite/
+
+# Optional: Mac & Windows system files
+Thumbs.db
+ehthumbs.db
