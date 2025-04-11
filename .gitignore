@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
 transformers/
 *.csv
+.DS_Store
 data/
