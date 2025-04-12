@@ -1,0 +1,38 @@
+.chord { 
+    background-color: white;
+    color: black;
+    position: relative;
+    user-select: auto;
+    width: 78px;
+    height: 78px;
+    max-width: 156px;
+    max-height: 80px;
+    min-height: 80px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    min-width: 29px;
+}
+
+.lines {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 13px;
+    position: absolute;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 100%;
+
+    span {
+        color: #ddd;
+        display: inline-flex;
+        height: 15px;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+
+
