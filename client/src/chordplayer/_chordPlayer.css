@@ -24,8 +24,6 @@
   .chord div {
     width: 156px;
     min-width: 29px;
-    min-height: 80px;
-    max-height: 80px;
     box-sizing: border-box;
     user-select: auto;
   }
@@ -47,6 +45,7 @@
     margin-top: 13%;
     padding: 0 10px;
     width: 100%;
+    height: 20px;
     display: flex;
     justify-content: space-between;
     /* user-select: none; */
