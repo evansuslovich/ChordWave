@@ -1,39 +1,35 @@
 import { ChordType, BeatEnum } from "./ChordPlayer";
-import "./_chord.css";
+import "./_chordPlayer.css";
 
-interface ChordProp {
+interface ChordProps {
   chord: ChordType;
+  index: number;
+  handleClick: (index: number) => void;
 }
-interface BeatProp {
+
+interface BeatsProps {
   beats: BeatEnum;
 }
 
-const Beats = (beatProp: BeatProp) => {
-  const { beats } = beatProp;
-  const beatElements = [];
-
-  for (let i = 0; i < beats - 1; i++) {
-    beatElements.push(
-      <span key={i} className="">
-        |
-      </span>
-    );
-  }
-
-  return <div className="lines">{beatElements}</div>;
+const Chord = ({ chord, index, handleClick }: ChordProps) => {
+  return (
+    <div className="chord">
+      <li role="button" onClick={() => handleClick(index)}>
+        <div>
+          {chord.chord}
+          <Beats beats={chord.beats} />
+        </div>
+      </li>
+    </div>
+  );
 };
 
-const Chord = (chordProp: ChordProp) => {
-  const { chord } = chordProp;
+const Beats = ({ beats }: BeatsProps) => {
+  const beatElements = Array.from({ length: beats - 1 }, (_, i) => (
+    <span key={i}>|</span>
+  ));
 
-  return (
-    <ul className="chord">
-      <li>
-        <span>{chord.chord}</span>
-        <Beats beats={chord.beats} />
-      </li>
-    </ul>
-  );
+  return <div className="lines">{beatElements}</div>;
 };
 
 export default Chord;

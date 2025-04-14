@@ -1,16 +1,56 @@
 .chord { 
-    background-color: white;
-    color: black;
     position: relative;
     user-select: auto;
-    width: 78px;
-    height: 78px;
+    width: 156px;
+    height: auto;
     max-width: 156px;
     max-height: 80px;
     min-height: 80px;
     box-sizing: border-box;
     flex-shrink: 0;
     min-width: 29px;
+}
+
+.add-chord { 
+    position: relative;
+    user-select: auto;
+    width: 78px;
+    height: auto;
+    max-height: 80px;
+    min-height: 80px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    min-width: 29px;
+}
+
+.div {
+    position: relative;
+    user-select: auto;
+    width: 156px;
+    height: auto;
+    /* max-width: 156px; */
+    max-height: 80px;
+    min-height: 80px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    min-width: 29px;
+}
+
+.chord li {
+    align-items: center;
+    color: #4d4d4d;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: auto;
+    outline: none;
+    padding: 2px;
+    transition: .3s;
+    -webkit-user-select: none;
+    user-select: none;
+    width: auto;
+    z-index: 3;
 }
 
 .lines {
